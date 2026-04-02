@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="catalog-container">
+        
+        <div id="index-sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <h3>Índice</h3>
+                <button id="close-sidebar"><i class="fas fa-times"></i></button>
+            </div>
+            <ul id="index-list">
+               
+                <li data-page="1">Capa</li>
+                <li data-page="2">Página 2</li>
+                <li data-page="10">ALISAMENTOS</li>
+                <li data-page="20">Hidratação</li>
+                <li data-page="25">teste</li>
+                
+            </ul>
+        </div>
+
+        <div id="catalog">
+            <div id="page-display">
+                <div id="prev-area" class="nav-area"></div>
+                <img id="current-img" src="img/1capa.png" alt="Capa do Catálogo">
+                <div id="next-area" class="nav-area"></div>
+            </div>
+            
+            <div class="controls">
+                <button id="prev-btn" title="Página Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="index-btn" title="Índice">
+                    <i class="fas fa-list"></i>
+                </button>
+                <button id="fullscreen-btn" title="Tela Cheia">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button id="next-btn" title="Próxima Página">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div id="page-counter">
+                Página <span id="current-page">1</span> de <span id="total-pages">41</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
